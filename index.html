@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selvakumar S | Technomancy - Python Full Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Selvakumar S, a Python Full Stack Developer specializing in Django and Data Analysis. Experience the Technomancy of Code.">
+    <meta name="keywords" content="Selvakumar S, Technomancy, Python Developer, Django Specialist, Data Analyst, Tamil Nadu, Full Stack Developer, Portfolio">
+    <meta name="author" content="Selvakumar S">
+    
+    <!-- Open Graph / LinkedIn Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Selvakumar S | Python Full Stack Developer">
+    <meta property="og:description" content="Building robust backend systems with Python & Django. Check out my projects and skills.">
+    <meta property="og:image" content="avatar.jpg">
+    <meta property="og:url" content="https://selvakumar-s.netlify.app/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="brand-logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Selvakumar S",
+      "url": "https://selvakumar-s.netlify.app/",
+      "image": "https://selvakumar-s.netlify.app/avatar.jpg",
+      "jobTitle": "Python Full Stack Developer",
+      "alumniOf": "Asan Institute of Management",
+      "sameAs": [
+        "https://github.com/SELVAKUMAR-ANALYST",
+        "https://www.linkedin.com/in/selvakumar077"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <!-- Background Canvas -->
+    <div class="bg-canvas" id="particles-js">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Cinematic Loading Overlay -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-terminal">
+                <p class="loader-text" id="loader-msg">INITIALIZING SYSTEM...</p>
+                <div class="loader-bar"><div class="loader-progress"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#home"><img src="brand-logo.png" alt="Logo" class="nav-logo-img"> TECHNO<span>MANCY</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extra">
+                <button id="terminal-btn" class="terminal-toggle-btn" aria-label="Terminal Mode">
+                    <i class="fas fa-terminal"></i>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="reveal">Hello, I'm</h2>
+                <h1 class="reveal"><span class="gradient-text">Selvakumar</span></h1>
+                <h3 class="reveal"><span class="typed-text"></span><span class="cursor-typing">&nbsp;</span></h3>
+                <p class="reveal"><strong>I build real-world Django applications with structured workflows and clean UI.</strong></p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="Selvakumar_Resume.pdf" download="Selvakumar_Resume.pdf" class="btn btn-primary btn-resume"><i class="fas fa-file-download"></i> Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="image-wrapper">
+                    <img src="avatar.jpg" alt="Profile" id="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About & Education Bento Grid -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">The Revelations</span>
+                <h2 class="scramble">The Sorcerer's Bio</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Bio Box -->
+                <div class="bento-item about-text-box reveal">
+                    <div class="bento-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>Biography</h3>
+                    <div class="about-text">
+                        <p>I am an MCA graduate with a background in B.Com Computer Applications, focused on building robust backend systems using <strong>Python and Django</strong>.</p>
+                        <p>I specialize in crafting real-world applications with structured workflows, role-based security, and clean, intuitive user interfaces.</p>
+                    </div>
+                </div>
+
+                <!-- Info Box -->
+                <div class="bento-item about-info-box reveal">
+                    <h3>Contact Info</h3>
+                    <div class="about-info">
+                        <ul>
+                            <li><strong>Email:</strong> <span>selvakumarworkofficial@gmail.com</span></li>
+                            <li><strong>Location:</strong> <span>Tamil Nadu, India</span></li>
+                            <li><strong>Status:</strong> <span class="status-badge"><span class="pulse"></span> Open to Work</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Edu Box 1 -->
+                <div class="bento-item edu-box-1 reveal">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>MCA</h3>
+                    <p>Master of Computer Applications</p>
+                    <div class="cgpa">CGPA: 8.3</div>
+                </div>
+
+                <!-- Edu Box 2 -->
+                <div class="bento-item edu-box-2 reveal">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h3>B.Com CA</h3>
+                    <p>Computer Applications</p>
+                    <div class="cgpa">CGPA: 7.8</div>
+                </div>
+
+                <!-- GitHub Stats Card -->
+                <div class="bento-item github-stats-box reveal">
+                    <div class="bento-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub Activity</h3>
+                    <div class="github-stats">
+                        <div class="stat-row">
+                            <span class="stat-label">Public Repos:</span>
+                            <span class="stat-value">12+</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Tech Stack:</span>
+                            <span class="stat-value">Python, Django, SQL</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" class="github-btn">Visit Profile <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">The Alchemist's Works</span>
+                <h2>Magic of Code</h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skills-grid">
+                    <div class="skill-category reveal">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">Bootstrap</div>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">Django</div>
+                            <div class="skill-tag">REST APIs</div>
+                        </div>
+                    </div>
+                    <div class="skill-category reveal">
+                        <h3>Data & Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">SQLite</div>
+                            <div class="skill-tag">Git/GitHub</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-chart-container reveal">
+                    <canvas id="skillsRadar"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">The Alchemist's Creations</span>
+                <h2>Magic of Code</h2>
+                <div class="line"></div>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="complaint.png" alt="Complaint Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="problem-solver">Helping organizations track and resolve employee complaints efficiently.</p>
+                        <h3>Complaint Management System</h3>
+                        <p>A role-based web application to manage and track complaints efficiently.</p>
+                        <ul class="features">
+                            <li>Role-based access (Admin, Manager, User)</li>
+                            <li>Complaint lifecycle tracking (Open → Resolved)</li>
+                            <li>Activity timeline system</li>
+                            <li>Admin dashboard with analytics (Chart.js)</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>SQLite</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="vetsphere.png" alt="Vetsphere">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <p class="problem-solver">Automating appointment scheduling and data management for pet care.</p>
+                        <h3>Vetsphere (Pet Care System)</h3>
+                        <p>A full-stack Django application for managing pet care services.</p>
+                        <ul class="features">
+                            <li>Appointment booking system</li>
+                            <li>Admin dashboard</li>
+                            <li>User-friendly interface</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span>Django</span>
+                            <span>SQLite</span>
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section (Proof) -->
+    <section id="highlights" class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Proof</span>
+                <h2>Project Highlights</h2>
+                <div class="line"></div>
+            </div>
+            <div class="highlights-container reveal">
+                <div class="highlight-item">
+                    <img src="complaint.png" alt="Dashboard Preview">
+                    <p>Dynamic Analytics Dashboard for Complaint Tracking</p>
+                </div>
+                <div class="highlight-item">
+                    <img src="vetsphere.png" alt="User Flow Preview">
+                    <p>Seamless Appointment Booking Interface</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section alt-bg">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Get In Touch</span>
+                <h2>Contact Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>selvakumarworkofficial@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8838038576</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links-big">
+                        <a href="https://linkedin.com/in/selvakumar077" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="contact-form reveal simplified">
+                    <p class="form-title">Send a Quick Message</p>
+                    <form id="portfolio-contact" action="https://formsubmit.co/selvakumarworkofficial@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Portfolio Message!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-row">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="3" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Selvakumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Terminal Mode Modal -->
+    <div id="terminal-modal" class="terminal-modal">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="close-btn" id="terminal-close"></span>
+                    <span class="min-btn"></span>
+                    <span class="max-btn"></span>
+                </div>
+                <div class="terminal-title">selvakumar@portfolio: ~</div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <p>Welcome to Selvakumar's Portfolio Terminal.</p>
+                <p>Type <span class="cmd-highlight">help</span> to see available commands.</p>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">selvakumar@portfolio:~$</span>
+                <input type="text" id="terminal-input" autocomplete="off">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
