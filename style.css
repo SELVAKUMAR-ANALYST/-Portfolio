@@ -603,6 +603,21 @@ a {
 
 .github-stats {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.stats-card, .langs-card {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.1));
+    transition: var(--transition);
+}
+
+.stats-card:hover, .langs-card:hover {
+    transform: scale(1.02);
 }
 
 .stat-row {
