@@ -1041,7 +1041,7 @@ a {
 .highlight-item img {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9.5; /* Slightly taller than 16:9 to keep most content but hide taskbar */
+    aspect-ratio: 16 / 8.2; /* Aggressive crop to ensure taskbar is hidden */
     object-fit: cover;
     object-position: top;
     border-radius: 10px;
