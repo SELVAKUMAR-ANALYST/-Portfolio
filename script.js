@@ -31,24 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 150);
     }
     
-    // --- 1. Custom Cursor ---
-    const cursor = document.querySelector('.cursor');
-    const follower = document.querySelector('.cursor-follower');
-    
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-        follower.style.transform = `translate3d(${e.clientX - 10}px, ${e.clientY - 10}px, 0)`;
-    });
 
-    document.addEventListener('mousedown', () => {
-        cursor.style.transform += ' scale(0.8)';
-        follower.style.transform += ' scale(1.5)';
-    });
-
-    document.addEventListener('mouseup', () => {
-        cursor.style.transform = cursor.style.transform.replace(' scale(0.8)', '');
-        follower.style.transform = follower.style.transform.replace(' scale(1.5)', '');
-    });
 
 
 
