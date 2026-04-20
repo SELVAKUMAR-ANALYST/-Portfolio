@@ -850,6 +850,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     transition: transform 0.5s ease;
 }
 
@@ -1039,6 +1040,10 @@ a {
 
 .highlight-item img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9.5; /* Slightly taller than 16:9 to keep most content but hide taskbar */
+    object-fit: cover;
+    object-position: top;
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: var(--glass-shadow);
