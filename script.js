@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cursorSpan = document.querySelector(".cursor-typing");
 
     if (typedTextSpan && cursorSpan) {
-        const textArray = ["Python Full Stack Developer", "Django Specialist", "Data Analyst", "Backend Engineer"];
+        const textArray = ["Python Full Stack Developer", "Django Specialist", "Backend Engineer", "Problem Solver"];
         const typingDelay = 100;
         const erasingDelay = 50;
         const newTextDelay = 2000; // Delay between current and next text
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         new Chart(ctx, {
             type: 'radar',
             data: {
-                labels: ['Python', 'Django', 'SQL', 'JavaScript', 'HTML/CSS', 'Data Analysis'],
+                labels: ['Python', 'Django', 'SQL', 'JavaScript', 'HTML/CSS', 'REST APIs'],
                 datasets: [{
                     label: 'Skill Proficiency',
                     data: [90, 85, 80, 75, 85, 70],
@@ -288,8 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const commands = {
             'help': 'Available commands: <br>- <span class="cmd-highlight">whoami</span>: About me<br>- <span class="cmd-highlight">skills</span>: My expertise<br>- <span class="cmd-highlight">projects</span>: View my work<br>- <span class="cmd-highlight">contact</span>: Get in touch<br>- <span class="cmd-highlight">clear</span>: Clear terminal',
-            'whoami': 'Selvakumar - Python Full Stack Developer. I build robust Django applications and analyze data.',
-            'skills': 'Python, Django, SQL, JavaScript, HTML, CSS, REST APIs, Git.',
+            'whoami': 'Selvakumar - Python Full Stack Developer. I build robust Django applications with clean backend architecture.',
+            'skills': 'Python, Django, REST APIs, SQL, JavaScript, HTML/CSS, Git.',
             'projects': '1. Enterprise Complaint Management System<br>2. Vetsphere Pet Care Management',
             'contact': 'Email: selvakumarworkofficial@gmail.com<br>LinkedIn: https://linkedin.com/in/selvakumar077'
         };

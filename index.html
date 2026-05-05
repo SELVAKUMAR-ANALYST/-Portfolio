@@ -6,14 +6,14 @@
     <title>Selvakumar S | Technomancy - Python Full Stack Developer</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of Selvakumar S, a Python Full Stack Developer specializing in Django and Data Analysis. Experience the Technomancy of Code.">
-    <meta name="keywords" content="Selvakumar S, Technomancy, Python Developer, Django Specialist, Data Analyst, Tamil Nadu, Full Stack Developer, Portfolio">
+    <meta name="description" content="Portfolio of Selvakumar S, a Python Full Stack Developer specializing in Django and modern web apps. Experience the Technomancy of Code.">
+    <meta name="keywords" content="Selvakumar S, Technomancy, Python Developer, Django, Full Stack Developer, Portfolio">
     <meta name="author" content="Selvakumar S">
     
     <!-- Open Graph / LinkedIn Preview -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Selvakumar S | Python Full Stack Developer">
-    <meta property="og:description" content="Building robust backend systems with Python & Django. Check out my projects and skills.">
+    <meta property="og:description" content="Building robust web applications with Python & Django. Check out my projects and skills.">
     <meta property="og:image" content="avatar.jpg">
     <meta property="og:url" content="https://selvakumar-s.netlify.app/">
 
@@ -45,7 +45,51 @@
     }
     </script>
 
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.5">
+    <style>
+        /* Project Highlights - Clean Fix */
+        .highlights-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .highlight-item {
+            border-radius: 16px;
+            overflow: hidden;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            padding-bottom: 16px;
+        }
+        .highlight-item .img-crop {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        .highlight-item .img-crop img {
+            width: 100%;
+            height: 135%;  /* taller than container */
+            object-fit: cover;
+            object-position: top center; /* show top, hide taskbar at bottom */
+            display: block;
+            margin-top: 0;
+        }
+        .highlight-item p {
+            margin-top: 14px;
+            font-weight: 600;
+            padding: 0 12px;
+            color: var(--text-primary);
+        }
+        @media (max-width: 768px) {
+            .highlights-container {
+                grid-template-columns: 1fr;
+            }
+            .highlight-item .img-crop {
+                height: 200px;
+            }
+        }
+    </style>
 </head>
 <body class="dark-mode">
     <!-- Background Canvas -->
@@ -101,7 +145,7 @@
                 <h2 class="reveal">Hello, I'm</h2>
                 <h1 class="reveal"><span class="gradient-text">Selvakumar</span></h1>
                 <h3 class="reveal"><span class="typed-text"></span><span class="cursor-typing">&nbsp;</span></h3>
-                <p class="reveal"><strong>Python Backend Developer | Django Specialist</strong><br>Developing secure, process-driven web applications with a focus on automated workflows and relational database design.</p>
+                <p class="reveal"><strong>Python Full Stack Developer</strong><br>Developing secure, process-driven web applications with a focus on automated workflows and relational database design.</p>
                 <div class="hero-btns reveal">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="https://github.com/SELVAKUMAR-ANALYST" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
@@ -134,7 +178,7 @@
                     <div class="bento-icon"><i class="fas fa-user-astronaut"></i></div>
                     <h3>Biography</h3>
                     <div class="about-text">
-                        <p>I am an MCA graduate specializing in backend development with Python and Django. I build robust systems that solve operational challenges through structured workflows, including automated SLA tracking and data-driven dashboards.</p>
+                        <p>I am an MCA graduate specializing in full stack development with Python and Django. I build robust systems that solve real operational challenges through structured workflows, automated SLA tracking and data-driven dashboards.</p>
                         <p>My focus is on writing maintainable code and building secure, scalable architectures that bridge the gap between complex backend logic and intuitive user experiences.</p>
                     </div>
                 </div>
@@ -306,12 +350,16 @@
             </div>
             <div class="highlights-container reveal">
                 <div class="highlight-item">
-                    <img src="complaint.png" alt="Dashboard Preview">
-                    <p>Dynamic Analytics Dashboard for Complaint Tracking</p>
+                    <div class="img-crop">
+                        <img src="cms-login.png" alt="CMS Pro Secure Login">
+                    </div>
+                    <p>Secure Enterprise Login Interface for CMS Pro</p>
                 </div>
                 <div class="highlight-item">
-                    <img src="vetsphere.png" alt="User Flow Preview">
-                    <p>Seamless Appointment Booking Interface</p>
+                    <div class="img-crop">
+                        <img src="vetsphere-dashboard.png" alt="VetSphere Admin Dashboard">
+                    </div>
+                    <p>Comprehensive Admin Command Center for VetSphere</p>
                 </div>
             </div>
         </div>
@@ -407,6 +455,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 </html>
